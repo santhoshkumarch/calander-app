@@ -1,15 +1,13 @@
 import { ChangeDetectionStrategy, SimpleChanges, OnChanges, Component, OnInit, ViewChild, ElementRef, AfterViewInit, OnDestroy, Input, EventEmitter, Output } from '@angular/core';
 import { Appointment } from '../appointment.type';
 import $ from 'jquery';
-import * as moment from 'Moment';
+import * as moment from 'moment';
 import 'fullcalendar';
 
 @Component({
   selector: 'app-calendar',
   template: `
-  <mat-card>
   <div #calendar></div>
-  </mat-card>
   `,
   styleUrls: ['./calendar.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
